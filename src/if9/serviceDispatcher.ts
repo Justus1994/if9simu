@@ -24,7 +24,7 @@ export function dispatch2Vehicle(type, VIN) {
 }
 
 function setState(vehicleId, stateDiff, serviceType) {
-  const delay = getRandomInt(1000, 60000); // between 0 and 180000
+  const delay = getRandomInt(60000, 1000); // between 0 and 180000
   const customerServiceId = `${getRandomInt(3497978842)}_${getRandomInt(1574021522259)}_${getRandomInt(99, 1)}@NGTP`;
   Logger.info(`Setting vehicle state for "${vehicleId}" state in ${delay} milliseconds with customerServiceId ${customerServiceId}`);
   // create a new request
